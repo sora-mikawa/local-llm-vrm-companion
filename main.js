@@ -17,10 +17,6 @@ textureLoader.load("./background.png", (texture) => {
 const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 20);
 camera.position.set(0, 1.6, 1.2);
 
-// const light = new THREE.DirectionalLight(0xffffff, 1.0);
-// light.position.set(1, 1, 1).normalize();
-// scene.add(light);
-
 // 環境光（全体の柔らかさ）
 const ambientLight = new THREE.AmbientLight(0xffeedd, 0.3); // やや暖かい白
 scene.add(ambientLight);
