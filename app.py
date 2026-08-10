@@ -26,7 +26,7 @@ from pathlib import Path
 import ollama
 
 
-# 簡易HTTPサーバー
+#　簡易HTTPサーバー
 def start_server(directory, port=8000):
     os.chdir(directory)
     handler = SimpleHTTPRequestHandler
