@@ -57,7 +57,7 @@ output_stream.start()
 stream_lock = threading.Lock()
 
 
-# 最初の一文を取得
+# 最初の一文を取得する
 def get_first_sentence(text):
     """最初の一文（。！？!?のいずれかまで）を取得する"""
     match = re.search(r".+?。", text)
